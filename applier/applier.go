@@ -15,7 +15,7 @@ func NewApplier(c cache.LocalArtifactCache) Applier {
 	return Applier{cache: c}
 }
 
-func (a Applier) ApplyLayers(imageID string, diffIDs []string) (types.ArtifactDetail, error) {
+func (a Applier) ApplyLayers(imageID string, diffIDs []string, manifest []uint8) (types.ArtifactDetail, error) {
 	var layers []types.BlobInfo
 	for _, diffID := range diffIDs {
 		layer, _ := a.cache.GetBlob(diffID)
@@ -34,6 +34,8 @@ func (a Applier) ApplyLayers(imageID string, diffIDs []string) (types.ArtifactDe
 
 	imageInfo, _ := a.cache.GetArtifact(imageID)
 	mergedLayer.HistoryPackages = imageInfo.HistoryPackages
+
+	mergedLayer.Manifest = manifest
 
 	return mergedLayer, nil
 }

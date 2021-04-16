@@ -66,6 +66,7 @@ type ArtifactReference struct {
 	BlobIDs     []string
 	RepoTags    []string
 	RepoDigests []string
+	Manifest []uint8
 }
 
 // ArtifactInfo is stored in cache
@@ -102,4 +103,7 @@ type ArtifactDetail struct {
 
 	// HistoryPackages are packages extracted from RUN instructions
 	HistoryPackages []Package `json:",omitempty"`
+
+	// Joff additions
+	Manifest []uint8 `json:",omitempty"`
 }

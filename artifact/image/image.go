@@ -55,12 +55,14 @@ func (a Artifact) Inspect(ctx context.Context) (types.ArtifactReference, error) 
 		return types.ArtifactReference{}, xerrors.Errorf("analyze error: %w", err)
 	}
 
+	manifest, _ := a.image.Manifest()
 	return types.ArtifactReference{
 		Name:        a.image.Name(),
 		ID:          versionedImageID,
 		BlobIDs:     versionedDiffIDs,
 		RepoTags:    a.image.RepoTags(),
 		RepoDigests: a.image.RepoDigests(),
+		Manifest: manifest,
 	}, nil
 
 }

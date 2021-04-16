@@ -166,7 +166,7 @@ func inspect(ctx context.Context, art artifact.Artifact, c cache.LocalArtifactCa
 	}
 
 	a := applier.NewApplier(c)
-	mergedLayer, err := a.ApplyLayers(imageInfo.ID, imageInfo.BlobIDs)
+	mergedLayer, err := a.ApplyLayers(imageInfo.ID, imageInfo.BlobIDs, imageInfo.Manifest)
 	if err != nil {
 		switch err {
 		case analyzer.ErrUnknownOS, analyzer.ErrNoPkgsDetected:
