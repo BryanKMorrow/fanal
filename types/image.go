@@ -67,7 +67,7 @@ type ArtifactReference struct {
 	BlobIDs     []string
 	RepoTags    []string
 	RepoDigests []string
-	Manifest v1.Manifest
+	Manifest    v1.Manifest
 }
 
 // ArtifactInfo is stored in cache

@@ -6,6 +6,7 @@ import (
 	"io"
 	"os"
 	"reflect"
+	"strings"
 	"sync"
 
 	v1 "github.com/google/go-containerregistry/pkg/v1"
@@ -63,7 +64,7 @@ func (a Artifact) Inspect(ctx context.Context) (types.ArtifactReference, error) 
 		BlobIDs:     versionedDiffIDs,
 		RepoTags:    a.image.RepoTags(),
 		RepoDigests: a.image.RepoDigests(),
-		Manifest: manifest,
+		Manifest:    manifest,
 	}, nil
 
 }
@@ -96,7 +97,8 @@ func (a Artifact) inspect(ctx context.Context, imageID string, missingImage bool
 				errCh <- xerrors.Errorf("failed to analyze layer: %s : %w", diffID, err)
 				return
 			}
-			if err = a.cache.PutBlob(versionedDiffID, layerInfo); err != nil {
+			diff := strings.Split(versionedDiffID, "/")
+			if err = a.cache.PutBlob(diff[0], layerInfo); err != nil {
 				errCh <- xerrors.Errorf("failed to store layer: %s in cache: %w", diffID, err)
 				return
 			}
