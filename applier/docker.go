@@ -3,7 +3,7 @@ package applier
 import (
 	"time"
 
-	"github.com/aquasecurity/fanal/types"
+	"github.com/BryanKMorrow/fanal/types"
 	godeptypes "github.com/aquasecurity/go-dep-parser/pkg/types"
 	"github.com/knqyf263/nested"
 )

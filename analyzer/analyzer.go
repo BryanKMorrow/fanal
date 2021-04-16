@@ -9,8 +9,8 @@ import (
 
 	"golang.org/x/xerrors"
 
-	aos "github.com/aquasecurity/fanal/analyzer/os"
-	"github.com/aquasecurity/fanal/types"
+	aos "github.com/BryanKMorrow/fanal/analyzer/os"
+	"github.com/BryanKMorrow/fanal/types"
 )
 
 var (

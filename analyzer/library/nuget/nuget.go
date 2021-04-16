@@ -6,9 +6,9 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/fanal/analyzer"
-	"github.com/aquasecurity/fanal/analyzer/library"
-	"github.com/aquasecurity/fanal/utils"
+	"github.com/BryanKMorrow/fanal/analyzer"
+	"github.com/BryanKMorrow/fanal/analyzer/library"
+	"github.com/BryanKMorrow/fanal/utils"
 	"github.com/aquasecurity/go-dep-parser/pkg/nuget"
 )
 

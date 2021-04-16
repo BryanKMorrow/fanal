@@ -8,7 +8,7 @@ import (
 	"github.com/go-redis/redis/v8"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/fanal/types"
+	"github.com/BryanKMorrow/fanal/types"
 )
 
 var _ Cache = &RedisCache{}

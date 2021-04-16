@@ -8,7 +8,7 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/fanal/types"
+	"github.com/BryanKMorrow/fanal/types"
 )
 
 func TestCheckOptions(t *testing.T) {

@@ -9,13 +9,13 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/fanal/utils"
+	"github.com/BryanKMorrow/fanal/utils"
 
-	"github.com/aquasecurity/fanal/types"
+	"github.com/BryanKMorrow/fanal/types"
 
-	aos "github.com/aquasecurity/fanal/analyzer/os"
+	aos "github.com/BryanKMorrow/fanal/analyzer/os"
 
-	"github.com/aquasecurity/fanal/analyzer"
+	"github.com/BryanKMorrow/fanal/analyzer"
 )
 
 func init() {

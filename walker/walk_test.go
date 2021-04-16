@@ -3,7 +3,7 @@ package walker
 import (
 	"testing"
 
-	"github.com/aquasecurity/fanal/analyzer/library"
+	"github.com/BryanKMorrow/fanal/analyzer/library"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -1,4 +1,4 @@
-module github.com/aquasecurity/fanal
+module github.com/BryanKMorrow/fanal
 
 go 1.13
 

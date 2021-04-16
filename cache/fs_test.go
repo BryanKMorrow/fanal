@@ -13,7 +13,7 @@ import (
 	"github.com/stretchr/testify/require"
 	bolt "go.etcd.io/bbolt"
 
-	"github.com/aquasecurity/fanal/types"
+	"github.com/BryanKMorrow/fanal/types"
 	depTypes "github.com/aquasecurity/go-dep-parser/pkg/types"
 )
 

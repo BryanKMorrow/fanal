@@ -13,13 +13,13 @@ import (
 	digest "github.com/opencontainers/go-digest"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/fanal/analyzer"
-	_ "github.com/aquasecurity/fanal/analyzer/os/alpine"
-	_ "github.com/aquasecurity/fanal/analyzer/pkg/apk"
-	"github.com/aquasecurity/fanal/artifact"
-	"github.com/aquasecurity/fanal/cache"
-	"github.com/aquasecurity/fanal/types"
-	"github.com/aquasecurity/fanal/walker"
+	"github.com/BryanKMorrow/fanal/analyzer"
+	_ "github.com/BryanKMorrow/fanal/analyzer/os/alpine"
+	_ "github.com/BryanKMorrow/fanal/analyzer/pkg/apk"
+	"github.com/BryanKMorrow/fanal/artifact"
+	"github.com/BryanKMorrow/fanal/cache"
+	"github.com/BryanKMorrow/fanal/types"
+	"github.com/BryanKMorrow/fanal/walker"
 )
 
 type Artifact struct {

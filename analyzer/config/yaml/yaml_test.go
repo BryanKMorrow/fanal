@@ -8,9 +8,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/aquasecurity/fanal/analyzer"
-	"github.com/aquasecurity/fanal/analyzer/config"
-	"github.com/aquasecurity/fanal/types"
+	"github.com/BryanKMorrow/fanal/analyzer"
+	"github.com/BryanKMorrow/fanal/analyzer/config"
+	"github.com/BryanKMorrow/fanal/types"
 )
 
 func Test_yamlConfigAnalyzer_Analyze(t *testing.T) {

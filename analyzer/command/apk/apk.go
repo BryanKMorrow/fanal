@@ -13,10 +13,10 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/fanal/analyzer"
-	"github.com/aquasecurity/fanal/analyzer/os"
-	"github.com/aquasecurity/fanal/applier"
-	"github.com/aquasecurity/fanal/types"
+	"github.com/BryanKMorrow/fanal/analyzer"
+	"github.com/BryanKMorrow/fanal/analyzer/os"
+	"github.com/BryanKMorrow/fanal/applier"
+	"github.com/BryanKMorrow/fanal/types"
 )
 
 const (

@@ -12,15 +12,15 @@ import (
 	"golang.org/x/xerrors"
 
 	// Change the order in which "init()" is called intentionally
-	_ "github.com/aquasecurity/fanal/analyzer/os/ubuntu"
+	_ "github.com/BryanKMorrow/fanal/analyzer/os/ubuntu"
 
-	"github.com/aquasecurity/fanal/analyzer"
-	_ "github.com/aquasecurity/fanal/analyzer/command/apk"
-	_ "github.com/aquasecurity/fanal/analyzer/library/bundler"
-	aos "github.com/aquasecurity/fanal/analyzer/os"
-	_ "github.com/aquasecurity/fanal/analyzer/os/alpine"
-	_ "github.com/aquasecurity/fanal/analyzer/pkg/apk"
-	"github.com/aquasecurity/fanal/types"
+	"github.com/BryanKMorrow/fanal/analyzer"
+	_ "github.com/BryanKMorrow/fanal/analyzer/command/apk"
+	_ "github.com/BryanKMorrow/fanal/analyzer/library/bundler"
+	aos "github.com/BryanKMorrow/fanal/analyzer/os"
+	_ "github.com/BryanKMorrow/fanal/analyzer/os/alpine"
+	_ "github.com/BryanKMorrow/fanal/analyzer/pkg/apk"
+	"github.com/BryanKMorrow/fanal/types"
 	godeptypes "github.com/aquasecurity/go-dep-parser/pkg/types"
 )
 

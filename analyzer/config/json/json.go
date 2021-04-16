@@ -7,9 +7,9 @@ import (
 	"github.com/open-policy-agent/conftest/parser/json"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/fanal/analyzer"
-	"github.com/aquasecurity/fanal/analyzer/config"
-	"github.com/aquasecurity/fanal/types"
+	"github.com/BryanKMorrow/fanal/analyzer"
+	"github.com/BryanKMorrow/fanal/analyzer/config"
+	"github.com/BryanKMorrow/fanal/types"
 )
 
 func init() {

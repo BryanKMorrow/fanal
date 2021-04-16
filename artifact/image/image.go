@@ -11,12 +11,12 @@ import (
 	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/fanal/analyzer"
-	"github.com/aquasecurity/fanal/artifact"
-	"github.com/aquasecurity/fanal/cache"
-	"github.com/aquasecurity/fanal/image"
-	"github.com/aquasecurity/fanal/types"
-	"github.com/aquasecurity/fanal/walker"
+	"github.com/BryanKMorrow/fanal/analyzer"
+	"github.com/BryanKMorrow/fanal/artifact"
+	"github.com/BryanKMorrow/fanal/cache"
+	"github.com/BryanKMorrow/fanal/image"
+	"github.com/BryanKMorrow/fanal/types"
+	"github.com/BryanKMorrow/fanal/walker"
 )
 
 type Artifact struct {

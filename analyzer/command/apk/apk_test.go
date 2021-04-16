@@ -15,7 +15,7 @@ import (
 
 	"github.com/kylelemons/godebug/pretty"
 
-	"github.com/aquasecurity/fanal/types"
+	"github.com/BryanKMorrow/fanal/types"
 )
 
 func TestAnalyze(t *testing.T) {

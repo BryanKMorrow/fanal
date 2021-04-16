@@ -9,13 +9,13 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/aquasecurity/fanal/types"
+	"github.com/BryanKMorrow/fanal/types"
 
-	"github.com/aquasecurity/fanal/utils"
+	"github.com/BryanKMorrow/fanal/utils"
 
 	mapset "github.com/deckarep/golang-set"
 
-	"github.com/aquasecurity/fanal/analyzer"
+	"github.com/BryanKMorrow/fanal/analyzer"
 
 	debVersion "github.com/knqyf263/go-deb-version"
 )

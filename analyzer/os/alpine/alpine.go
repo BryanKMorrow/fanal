@@ -7,10 +7,10 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/fanal/analyzer"
-	aos "github.com/aquasecurity/fanal/analyzer/os"
-	"github.com/aquasecurity/fanal/types"
-	"github.com/aquasecurity/fanal/utils"
+	"github.com/BryanKMorrow/fanal/analyzer"
+	aos "github.com/BryanKMorrow/fanal/analyzer/os"
+	"github.com/BryanKMorrow/fanal/types"
+	"github.com/BryanKMorrow/fanal/utils"
 )
 
 func init() {

@@ -19,14 +19,14 @@ import (
 	testcontainers "github.com/testcontainers/testcontainers-go"
 	"github.com/testcontainers/testcontainers-go/wait"
 
-	_ "github.com/aquasecurity/fanal/analyzer/os/alpine"
-	_ "github.com/aquasecurity/fanal/analyzer/pkg/apk"
-	"github.com/aquasecurity/fanal/applier"
-	aimage "github.com/aquasecurity/fanal/artifact/image"
-	"github.com/aquasecurity/fanal/cache"
-	"github.com/aquasecurity/fanal/image"
-	testdocker "github.com/aquasecurity/fanal/test/integration/docker"
-	"github.com/aquasecurity/fanal/types"
+	_ "github.com/BryanKMorrow/fanal/analyzer/os/alpine"
+	_ "github.com/BryanKMorrow/fanal/analyzer/pkg/apk"
+	"github.com/BryanKMorrow/fanal/applier"
+	aimage "github.com/BryanKMorrow/fanal/artifact/image"
+	"github.com/BryanKMorrow/fanal/cache"
+	"github.com/BryanKMorrow/fanal/image"
+	testdocker "github.com/BryanKMorrow/fanal/test/integration/docker"
+	"github.com/BryanKMorrow/fanal/types"
 )
 
 const (

@@ -1,10 +1,10 @@
 # fanal
 Static Analysis Library for Containers
 
-[![GoDoc](https://godoc.org/github.com/aquasecurity/fanal?status.svg)](https://godoc.org/github.com/aquasecurity/fanal)
-![Test](https://github.com/aquasecurity/fanal/workflows/Test/badge.svg)
-[![Go Report Card](https://goreportcard.com/badge/github.com/aquasecurity/fanal)](https://goreportcard.com/report/github.com/aquasecurity/fanal)
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/aquasecurity/fanal/blob/main/LICENSE)
+[![GoDoc](https://godoc.org/github.com/BryanKMorrow/fanal?status.svg)](https://godoc.org/github.com/BryanKMorrow/fanal)
+![Test](https://github.com/BryanKMorrow/fanal/workflows/Test/badge.svg)
+[![Go Report Card](https://goreportcard.com/badge/github.com/BryanKMorrow/fanal)](https://goreportcard.com/report/github.com/BryanKMorrow/fanal)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/BryanKMorrow/fanal/blob/main/LICENSE)
 
 ## Feature
 - Detect OS
@@ -27,25 +27,25 @@ import (
 
 	"golang.org/x/xerrors"
 
-	"github.com/aquasecurity/fanal/cache"
+	"github.com/BryanKMorrow/fanal/cache"
 
-	"github.com/aquasecurity/fanal/analyzer"
-	_ "github.com/aquasecurity/fanal/analyzer/library/bundler"
-	_ "github.com/aquasecurity/fanal/analyzer/library/composer"
-	_ "github.com/aquasecurity/fanal/analyzer/library/npm"
-	_ "github.com/aquasecurity/fanal/analyzer/library/pipenv"
-	_ "github.com/aquasecurity/fanal/analyzer/library/poetry"
-	_ "github.com/aquasecurity/fanal/analyzer/library/yarn"
-	_ "github.com/aquasecurity/fanal/analyzer/library/cargo"
-	_ "github.com/aquasecurity/fanal/analyzer/os/alpine"
-	_ "github.com/aquasecurity/fanal/analyzer/os/amazonlinux"
-	_ "github.com/aquasecurity/fanal/analyzer/os/debianbase"
-	_ "github.com/aquasecurity/fanal/analyzer/os/suse"
-	_ "github.com/aquasecurity/fanal/analyzer/os/redhatbase"
-	_ "github.com/aquasecurity/fanal/analyzer/pkg/apk"
-	_ "github.com/aquasecurity/fanal/analyzer/pkg/dpkg"
-	_ "github.com/aquasecurity/fanal/analyzer/pkg/rpm"
-	"github.com/aquasecurity/fanal/extractor"
+	"github.com/BryanKMorrow/fanal/analyzer"
+	_ "github.com/BryanKMorrow/fanal/analyzer/library/bundler"
+	_ "github.com/BryanKMorrow/fanal/analyzer/library/composer"
+	_ "github.com/BryanKMorrow/fanal/analyzer/library/npm"
+	_ "github.com/BryanKMorrow/fanal/analyzer/library/pipenv"
+	_ "github.com/BryanKMorrow/fanal/analyzer/library/poetry"
+	_ "github.com/BryanKMorrow/fanal/analyzer/library/yarn"
+	_ "github.com/BryanKMorrow/fanal/analyzer/library/cargo"
+	_ "github.com/BryanKMorrow/fanal/analyzer/os/alpine"
+	_ "github.com/BryanKMorrow/fanal/analyzer/os/amazonlinux"
+	_ "github.com/BryanKMorrow/fanal/analyzer/os/debianbase"
+	_ "github.com/BryanKMorrow/fanal/analyzer/os/suse"
+	_ "github.com/BryanKMorrow/fanal/analyzer/os/redhatbase"
+	_ "github.com/BryanKMorrow/fanal/analyzer/pkg/apk"
+	_ "github.com/BryanKMorrow/fanal/analyzer/pkg/dpkg"
+	_ "github.com/BryanKMorrow/fanal/analyzer/pkg/rpm"
+	"github.com/BryanKMorrow/fanal/extractor"
 	"golang.org/x/crypto/ssh/terminal"
 )
 
