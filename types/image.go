@@ -79,6 +79,8 @@ type ArtifactInfo struct {
 
 	// HistoryPackages are packages extracted from RUN instructions
 	HistoryPackages []Package `json:",omitempty"`
+
+	Manifest []uint8 `json:",omitempty"`
 }
 
 // BlobInfo is stored in cache

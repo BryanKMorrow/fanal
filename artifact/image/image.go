@@ -56,6 +56,7 @@ func (a Artifact) Inspect(ctx context.Context) (types.ArtifactReference, error) 
 	}
 
 	manifest, _ := a.image.Manifest()
+
 	return types.ArtifactReference{
 		Name:        a.image.Name(),
 		ID:          versionedImageID,
