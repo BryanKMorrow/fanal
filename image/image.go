@@ -55,8 +55,9 @@ func (img Image) LayerByDiffID(h v1.Hash) (v1.Layer, error) {
 	return img.client.LayerByDiffID(h)
 }
 
-func (img Image) Manifest() ([]uint8, error) {
-	return img.client.RawManifest()
+func (img Image) Manifest() (v1.Manifest, error) {
+	manifest, err := img.client.Manifest()
+	return *manifest, err
 }
 
 func NewDockerImage(ctx context.Context, imageName string, option types.DockerOption) (Image, func(), error) {

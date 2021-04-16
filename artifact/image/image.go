@@ -150,7 +150,6 @@ func (a Artifact) inspectLayer(diffID string) (types.BlobInfo, error) {
 	wg.Wait()
 
 	result.Sort()
-
 	layerInfo := types.BlobInfo{
 		SchemaVersion: types.BlobJSONSchemaVersion,
 		Digest:        layerDigest,

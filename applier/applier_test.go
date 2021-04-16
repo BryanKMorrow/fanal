@@ -1,6 +1,7 @@
 package applier_test
 
 import (
+	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"sort"
 	"testing"
 
@@ -525,7 +526,8 @@ func TestApplier_ApplyLayers(t *testing.T) {
 
 			a := applier.NewApplier(c)
 
-			got, err := a.ApplyLayers(tt.args.imageID, tt.args.layerIDs)
+			var manifest v1.Manifest
+			got, err := a.ApplyLayers(tt.args.imageID, tt.args.layerIDs, manifest)
 			if tt.wantErr != "" {
 				require.NotNil(t, err)
 				assert.Contains(t, err.Error(), tt.wantErr, tt.name)

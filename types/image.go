@@ -1,6 +1,7 @@
 package types
 
 import (
+	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"time"
 
 	godeptypes "github.com/aquasecurity/go-dep-parser/pkg/types"
@@ -66,7 +67,7 @@ type ArtifactReference struct {
 	BlobIDs     []string
 	RepoTags    []string
 	RepoDigests []string
-	Manifest []uint8
+	Manifest v1.Manifest
 }
 
 // ArtifactInfo is stored in cache
@@ -80,7 +81,7 @@ type ArtifactInfo struct {
 	// HistoryPackages are packages extracted from RUN instructions
 	HistoryPackages []Package `json:",omitempty"`
 
-	Manifest []uint8 `json:",omitempty"`
+	Manifest v1.Manifest `json:",omitempty"`
 }
 
 // BlobInfo is stored in cache
@@ -107,5 +108,5 @@ type ArtifactDetail struct {
 	HistoryPackages []Package `json:",omitempty"`
 
 	// Joff additions
-	Manifest []uint8 `json:",omitempty"`
+	Manifest v1.Manifest `json:",omitempty"`
 }

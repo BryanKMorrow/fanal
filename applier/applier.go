@@ -4,6 +4,7 @@ import (
 	"github.com/BryanKMorrow/fanal/analyzer"
 	"github.com/BryanKMorrow/fanal/cache"
 	"github.com/BryanKMorrow/fanal/types"
+	v1 "github.com/google/go-containerregistry/pkg/v1"
 	"golang.org/x/xerrors"
 )
 
@@ -15,7 +16,7 @@ func NewApplier(c cache.LocalArtifactCache) Applier {
 	return Applier{cache: c}
 }
 
-func (a Applier) ApplyLayers(imageID string, diffIDs []string, manifest []uint8) (types.ArtifactDetail, error) {
+func (a Applier) ApplyLayers(imageID string, diffIDs []string, manifest v1.Manifest) (types.ArtifactDetail, error) {
 	var layers []types.BlobInfo
 	for _, diffID := range diffIDs {
 		layer, _ := a.cache.GetBlob(diffID)
