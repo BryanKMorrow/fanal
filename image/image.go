@@ -2,6 +2,7 @@ package image
 
 import (
 	"context"
+	"log"
 
 	"github.com/google/go-containerregistry/pkg/name"
 	v1 "github.com/google/go-containerregistry/pkg/v1"
@@ -57,6 +58,10 @@ func (img Image) LayerByDiffID(h v1.Hash) (v1.Layer, error) {
 
 func (img Image) Manifest() (v1.Manifest, error) {
 	manifest, err := img.client.Manifest()
+	if err != nil {
+		log.Println("Error while getting image Manifest: ", err.Error())
+		return v1.Manifest{}, err
+	}
 	return *manifest, err
 }
 
