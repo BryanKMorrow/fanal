@@ -29,6 +29,7 @@ type Package struct {
 	SrcEpoch        int    `json:",omitempty"`
 	Modularitylabel string `json:",omitempty"`
 	Layer           Layer  `json:",omitempty"`
+	Feed            string `json:",omitempty"`
 }
 
 type SrcPackage struct {
