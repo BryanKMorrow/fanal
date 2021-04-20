@@ -1,8 +1,6 @@
 package applier
 
 import (
-	"fmt"
-	"strings"
 	"time"
 
 	"github.com/BryanKMorrow/fanal/types"
@@ -112,12 +110,6 @@ func ApplyLayers(layers []types.BlobInfo) types.ArtifactDetail {
 	})
 
 	for i, pkg := range mergedLayer.Packages {
-		// add feed
-		if mergedLayer.OS.Family == "debian" {
-			mergedLayer.Packages[i].Feed = fmt.Sprintf("debian oval %s", strings.Split(mergedLayer.OS.Name, ".")[0])
-		} else if mergedLayer.OS.Family == "ubuntu" {
-			mergedLayer.Packages[i].Feed = fmt.Sprintf("ubuntu %s", mergedLayer.OS.Name)
-		}
 		originLayerDigest, originLayerDiffID := lookupOriginLayerForPkg(pkg, layers)
 		mergedLayer.Packages[i].Layer = types.Layer{
 			Digest: originLayerDigest,
